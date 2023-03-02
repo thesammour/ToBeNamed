@@ -1,0 +1,53 @@
+<%- include('./partials/nav.ejs') %>
+<link rel="stylesheet" href="/css/landing.css">
+
+<body style="background-color: #121212;">
+    <div class="left" id="left">
+        <img class="landingheruimg" src="https://cdn.discordapp.com/attachments/1065193867428761691/1079165847618207794/1.gif" alt="">
+    </div>
+    <div class="right">
+        <h2>
+            صناعة الحياة 
+            <span class="slogan">
+            بالعلم 
+            </span>
+            و
+            <span class="slogan">
+            المعرفة
+            </span>
+            <br>
+            <a href="/services" class="thebutton">
+                <button class="enterbutton" style="background-color: rgb(27, 26, 26);">دخول</button>
+            </a>
+        </h2>
+    </div>
+    <div class="hidden">
+        <a href="/services" class="thebutton">
+            <button class="enterbutton">إكتشف هنا</button>
+        </a>
+    </div>
+</body>
+<style>
+    .hidden {
+        display: none;
+    }
+    @media only screen and (max-width: 601px) {
+        .left {
+            display: none;
+        }
+        .right {
+            display: none;
+        }
+        .thebutton {
+            width: 80vh;
+        }
+        .hidden {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+</style>
+</html>
