@@ -36,5 +36,5 @@ app.get('/soft-skills', (req, res) => {
     res.render('softskills')
 })
 app.listen(process.env.PORT || 5555, function(){
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+    console.log("Express server listening on port %d in %s mode");
   });
