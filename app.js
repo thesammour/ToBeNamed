@@ -35,6 +35,6 @@ app.get('/mis/jobs', (req, res) => {
 app.get('/soft-skills', (req, res) => {
     res.render('softskills')
 })
-app.listen('5555', (req, res) => {
-    console.log('Running Port')
-})
+app.listen(process.env.PORT || 5555, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
